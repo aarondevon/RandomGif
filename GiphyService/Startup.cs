@@ -34,6 +34,7 @@ namespace GiphyService
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GiphyService", Version = "v1" });
             });
             services.AddMvc();
+            // ********** What are these two Doing? **********
             services.AddSingleton<IGiphyService, Giphy.Libs.Services.GiphyService>();
             services.AddSingleton<IGetRandomGif, GetRandomGif>();
         }

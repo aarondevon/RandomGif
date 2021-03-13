@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace GiphyService.Controllers
 {
+    // ********** Does this class get newed up? **********
     [ApiController]
     [Route("v1/giphy/random/{searchCritera}")]
     public class GiphyController : Controller
